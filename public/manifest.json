@@ -1,0 +1,9 @@
+{
+  "short_name": "Sentinel",
+  "name": "Open source Platform as a Service with built-in canary deployments",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

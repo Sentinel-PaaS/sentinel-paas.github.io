@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:ital,wght@0,400;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Germania+One:wght@200;300;400;600;700;800;900&family=Lato:ital,wght@0,400;0,900;1,400&display=swap');
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Germania One", sans-serif;
+}
+
+/* .bg-sentinel-slate {
+  background-color: 
+} */
+
+@layer base {
+  code {
+    @apply text-sm;
+    @apply py-1;
+    @apply px-1.5;
+    @apply bg-gray-100;
+    @apply rounded
+  }
+}
+
+@layer utilities {
+
+  .p-floating-logo {
+    padding: 0 0 0 25%;
+  }
+
+  .w-sm-side-nav {
+    width: 310px;
+  }
+
+  .w-lg-side-nav {
+    width: 500px;
+  }
+
+  .w-xl-casestudy {
+    width: 1200px;
+  }
+
+  .pl-nav {
+    padding-left: 400px;
+  }
+
+  .h-landing {
+    height: calc(100vh - 300px);
+    min-height: 850px;
+  }
+
+  .h-landing-mobile {
+    height: calc(100vh - 200px);
+    min-height: 850px;
+  }
+
+  .text-landing {
+    font-size: 8.8rem;
+  }
+
+  .w-member {
+    width: calc(50% - 4rem);
+  }
+
+  .w-doc-nav {
+    width: 22%;
+  }
+
+  .bgImageFirst {
+    background-image: url(./images/sentinel_logo/PNGs/new_sentinel_bird.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 20%;
+    background-position: calc(55% / 3) calc(50% + 2rem);
+  }
+
+  .bgImageSecond {
+    background-image: url(./images/sentinel_logo/PNGs/orange_bird_no_lines_no_background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 20%;
+    background-position: calc(55% / 3) calc(50% + 2rem);
+  }
+
+  .bgImageThird {
+    background-image: url(./images/sentinel_logo/PNGs/blue_bird_no_lines_no_background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 20%;
+    background-position: calc(55% / 3) calc(50% + 2rem);
+  }
+
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
+  }
+}
+
+.current {
+  color: rgb(27, 168, 224);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
