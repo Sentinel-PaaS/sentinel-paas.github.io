@@ -8,6 +8,8 @@ import kafkaInAction from "../images/sentinel_diagrams/sentinel_overall_architec
 import CaseStudyNav from "./CaseStudyNav";
 import DemoCarousel from "./DemoCarousel";
 
+import { introDemo } from "../data";
+
 function CaseStudy() {
   const headerStyle = "section text-3xl font-extrabold mt-14 mb-6";
   const subHeaderStyle = "section text-2xl font-bold mt-16 mb-4";
@@ -38,7 +40,7 @@ function CaseStudy() {
             sit amet dapibus in, iaculis tristique mi.
           </p>
 
-          <DemoCarousel />
+          <DemoCarousel clipInfo={introDemo} />
 
           <h3 id="section-1-1" className={subHeaderStyle}>
             1.1 What is a PaaS

@@ -1,69 +1,64 @@
 import 'tw-elements';
 
-function DemoCarousel() {
+function CarouselItem(clip, index) {
+    return (
+        <div key={clip.key} className={`carousel-item ${index === 0 ? "active" : ""} relative float-left w-full`}>
+            <img
+                src={clip.src}
+                className="block w-full"
+                alt={clip.alt}
+            />
+            <div className="carousel-caption hidden md:block absolute text-center">
+                <h5 className="text-xl">{clip.header}</h5>
+                <p>{clip.caption}</p>
+            </div>
+        </div>
+    )
+}
+
+function Button(clip, index) {
+    if (index === 0) {
+        return (
+            <button
+                key={clip.key}
+                data-bs-target="#carouselDarkVariant"
+                data-bs-slide-to={index}
+                className="active"
+                aria-current="true"
+                aria-label="Slide 1"
+            ></button>
+        )
+    } else {
+        return (
+            <button
+                key={clip.key}
+                data-bs-target="#carouselDarkVariant"
+                data-bs-slide-to={index}
+                aria-label="Slide 1"
+            ></button>
+        )
+    }
+}
+
+function DemoCarousel({ clipInfo }) {
+    console.log(clipInfo);
     return (
         <div
             id="carouselDarkVariant"
-            className="carousel slide carousel-fade carousel-dark relative"
+            className="carousel slide carousel-dark relative"
             data-bs-ride="carousel"
             data-bs-interval="false"
         >
             <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
-                <button
-                    data-bs-target="#carouselDarkVariant"
-                    data-bs-slide-to="0"
-                    className="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                ></button>
-                <button
-                    data-bs-target="#carouselDarkVariant"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 1"
-                ></button>
-                <button
-                    data-bs-target="#carouselDarkVariant"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 1"
-                ></button>
+                {clipInfo.map((clip, index) => {
+                    return Button(clip, index);
+                })}
             </div>
 
             <div className="carousel-inner relative w-full overflow-hidden">
-                <div className="carousel-item active relative float-left w-full">
-                    <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(19).webp"
-                        className="block w-full"
-                        alt="Motorbike Smoke"
-                    />
-                    <div className="carousel-caption hidden md:block absolute text-center">
-                        <h5 className="text-xl">First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-
-                <div className="carousel-item relative float-left w-full">
-                    <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp"
-                        className="block w-full"
-                        alt="Mountaintop"
-                    />
-                    <div className="carousel-caption hidden md:block absolute text-center">
-                        <h5 className="text-xl">Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-
-                <div className="carousel-item relative float-left w-full">
-                    <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(40).webp"
-                        className="block w-full"
-                        alt="Woman Reading a Book"
-                    />
-                    <div className="carousel-caption hidden md:block absolute text-center">
-                        <h5 className="text-xl">Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
+                {clipInfo.map((clip, index) => {
+                    return CarouselItem(clip, index);
+                })}
             </div>
 
             <button
