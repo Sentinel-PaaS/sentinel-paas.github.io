@@ -8,7 +8,7 @@ function CarouselItem(clip, index) {
                 className="block w-full"
                 alt={clip.alt}
             />
-            <div className="carousel-caption hidden md:block absolute text-center">
+            <div className="carousel-caption hidden md:block absolute text-center mb-4">
                 <h5 className="text-xl">{clip.header}</h5>
                 <p>{clip.caption}</p>
             </div>
@@ -41,7 +41,6 @@ function Button(clip, index) {
 }
 
 function DemoCarousel({ clipInfo }) {
-    console.log(clipInfo);
     return (
         <div
             id="carouselDarkVariant"
@@ -49,7 +48,7 @@ function DemoCarousel({ clipInfo }) {
             data-bs-ride="carousel"
             data-bs-interval="false"
         >
-            <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+            <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 my-4">
                 {clipInfo.map((clip, index) => {
                     return Button(clip, index);
                 })}
@@ -67,7 +66,7 @@ function DemoCarousel({ clipInfo }) {
                 data-bs-target="#carouselDarkVariant"
                 data-bs-slide="prev"
             >
-                <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                <span id='left-arrow' className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
             </button>
             <button
@@ -76,7 +75,7 @@ function DemoCarousel({ clipInfo }) {
                 data-bs-target="#carouselDarkVariant"
                 data-bs-slide="next"
             >
-                <span className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                <span id='right-arrow' className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>
         </div>

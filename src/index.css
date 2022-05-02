@@ -122,3 +122,9 @@ h6 {
 .show {
   display: block;
 }
+
+.carousel-caption {
+  position: relative;
+  left: 0;
+  top: 0;
+}
