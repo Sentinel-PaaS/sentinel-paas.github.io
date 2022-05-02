@@ -6,6 +6,7 @@ import bufferingOptions from "../images/sentinel_diagrams/sentinel_overall_archi
 import kafkaInAction from "../images/sentinel_diagrams/sentinel_overall_architecture_2.png";
 
 import CaseStudyNav from "./CaseStudyNav";
+import DemoCarousel from "./DemoCarousel";
 
 function CaseStudy() {
   const headerStyle = "section text-3xl font-extrabold mt-14 mb-6";
@@ -36,6 +37,8 @@ function CaseStudy() {
             Fusce elit ligula, hendrerit at enim viverra, porttitor egestas metus. Donec massa lacus, imperdiet
             sit amet dapibus in, iaculis tristique mi.
           </p>
+
+          <DemoCarousel />
 
           <h3 id="section-1-1" className={subHeaderStyle}>
             1.1 What is a PaaS
@@ -330,13 +333,13 @@ function CaseStudy() {
               </dd>
             </div>
           </dl>
-          
+
           <img src={kafkaInAction} alt="Kafka in action" className={`${imgStyle} lg:w-3/4`} />
-          
+
           <h3 id="section-6-2" className={subHeaderStyle}>
             6.2 Traefik Configuration Overview
           </h3>
-          
+
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
             Quisque auctor ipsum sed diam placerat consequat. Integer aliquam nibh rhoncus interdum lobortis.
@@ -344,7 +347,7 @@ function CaseStudy() {
             Fusce elit ligula, hendrerit at enim viverra, porttitor egestas metus. Donec massa lacus, imperdiet
             sit amet dapibus in, iaculis tristique mi.
           </p>
-          
+
           <h3 id="section-6-3" className={subHeaderStyle}>
             6.3 Traefik Configuration for Canaries
           </h3>
@@ -399,7 +402,7 @@ function CaseStudy() {
             Fusce elit ligula, hendrerit at enim viverra, porttitor egestas metus. Donec massa lacus, imperdiet
             sit amet dapibus in, iaculis tristique mi.
           </p>
-          
+
           <h3 id="section-7-2" className={subHeaderStyle}>
             7.2 Monitoring a Canary Instance
           </h3>
@@ -410,7 +413,7 @@ function CaseStudy() {
             Fusce elit ligula, hendrerit at enim viverra, porttitor egestas metus. Donec massa lacus, imperdiet
             sit amet dapibus in, iaculis tristique mi.
           </p>
-          
+
           <h2 id="section-8" className={headerStyle}>8. Upcoming Work</h2>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -421,7 +424,7 @@ function CaseStudy() {
           </p>
 
           <h2 id="section-9" className={headerStyle}>9. References</h2>
-         <p className={paragraphStyle}>
+          <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
             Quisque auctor ipsum sed diam placerat consequat. Integer aliquam nibh rhoncus interdum lobortis.
             Cras hendrerit egestas dolor. Vestibulum diam tortor, dictum et consequat quis, gravida nec est.

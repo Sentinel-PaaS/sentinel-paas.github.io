@@ -52,5 +52,7 @@ module.exports = {
       borderColor: ['active'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('tw-elements/dist/plugin')
+  ],
 }
