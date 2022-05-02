@@ -1,3 +1,5 @@
-node_modules
+node_modules/
 build
 .DS_Store
+package-lock.json
+co_auth_commit.sh
