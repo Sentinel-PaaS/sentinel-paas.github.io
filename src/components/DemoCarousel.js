@@ -66,7 +66,7 @@ function DemoCarousel({ clipInfo }) {
                 data-bs-target="#carouselDarkVariant"
                 data-bs-slide="prev"
             >
-                <span id='left-arrow' className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                {/* <span id='left-arrow' className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span> */}
                 <span className="visually-hidden">Previous</span>
             </button>
             <button
@@ -75,7 +75,7 @@ function DemoCarousel({ clipInfo }) {
                 data-bs-target="#carouselDarkVariant"
                 data-bs-slide="next"
             >
-                <span id='right-arrow' className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                {/* <span id='right-arrow' className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span> */}
                 <span className="visually-hidden">Next</span>
             </button>
         </div>
