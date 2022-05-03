@@ -8,7 +8,7 @@ import kafkaInAction from "../images/sentinel_diagrams/sentinel_overall_architec
 import CaseStudyNav from "./CaseStudyNav";
 import DemoCarousel from "./DemoCarousel";
 
-import { introDemo } from "../data";
+import { introDemo, containerizedAppsDemo, canaryDeploymentsDemo, scalingDemo } from "../demoData";
 
 function CaseStudy() {
   const headerStyle = "section text-3xl font-extrabold mt-14 mb-6";
@@ -40,7 +40,7 @@ function CaseStudy() {
             sit amet dapibus in, iaculis tristique mi.
           </p>
 
-          <DemoCarousel clipInfo={introDemo} />
+          <DemoCarousel clipInfo={introDemo} targetId={"intro"} />
 
           <h3 id="section-1-1" className={subHeaderStyle}>
             1.1 What is a PaaS
@@ -136,6 +136,8 @@ function CaseStudy() {
             sit amet dapibus in, iaculis tristique mi.
           </p>
 
+          <DemoCarousel clipInfo={containerizedAppsDemo} targetId={"containerizedApps"} />
+
           {/* <!-- Section 3 --> */}
 
           <h2 id="section-3" className={headerStyle}>
@@ -207,6 +209,7 @@ function CaseStudy() {
           <h3 id="section-3-5" className={subHeaderStyle}>
             3.5 How Docker Swarm Mode Works
           </h3>
+          <DemoCarousel clipInfo={scalingDemo} targetId={"scalingDemo"} />
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
             Quisque auctor ipsum sed diam placerat consequat. Integer aliquam nibh rhoncus interdum lobortis.
@@ -289,6 +292,9 @@ function CaseStudy() {
           <h2 id="section-6" className={headerStyle}>
             6. Canary Deployments
           </h2>
+
+          <DemoCarousel clipInfo={canaryDeploymentsDemo} targetId={"canaryDemo"} />
+
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
             Quisque auctor ipsum sed diam placerat consequat. Integer aliquam nibh rhoncus interdum lobortis.
