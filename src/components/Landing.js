@@ -27,7 +27,7 @@ function Landing() {
 
       {/* Start second block */}
       <div className="hidden xl:flex h-landing bgImageSecond justify-center items-center text-center bg-fulvous py-20">
-        <h2 className="text-4xl font-extrabold w-1/2">Ready to Deploy</h2>
+        <h2 className="text-6xl font-extrabold w-1/2">Ready to Deploy</h2>
         <div className="flex flex-col w-1/2 justify-center mx-6 my-10 px-12">
           <p className="mx-auto text-3xl mb-14 px-4">
             A convenient command line interface for developers to deploy and update their applications with canary deployments
@@ -45,10 +45,10 @@ function Landing() {
 
       {/* Start third block */}
       <div className="hidden xl:flex h-landing bgImageThird justify-center items-center text-center bg-glaucous py-20">
-        <h2 className="text-4xl font-extrabold w-1/2">Comprehensive Monitoring</h2>
+        <h2 className="text-6xl font-extrabold w-1/2">Comprehensive Monitoring</h2>
         <div className="flex flex-col w-1/2 justify-center mx-6 my-10 px-4">
           <p className="mx-auto text-3xl mb-14 px-20">
-            Extensive monitoring tools to assist developers in assessing the health and performance of their applications
+            Monitoring tools to assist developers in assessing the health and performance of their applications
           </p>
           <img src={fullDiagram} alt="Lodge diagram" className="mx-auto rounded-lg shadow-xl" />
         </div>
