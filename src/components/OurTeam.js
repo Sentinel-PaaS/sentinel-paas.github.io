@@ -1,6 +1,6 @@
 import michael from "../images/team/Sentinel_logo_on_dark_circle.png";
 import brendan from "../images/team/Sentinel_logo_on_dark_circle.png";
-import sam from "../images/team/Sentinel_logo_on_dark_circle.png";
+import sam from "../images/team/sam.jpg";
 import drew from "../images/team/Sentinel_logo_on_dark_circle.png";
 
 import TeamMember from "./TeamMember";
@@ -27,11 +27,11 @@ const teamMembers = [
   {
     image: sam,
     name: "Samantha Lipari",
-    location: "Morristown, NJ",
+    location: "NYC Metropolitan Area",
     email: "samanthalipari@gmail.com",
     linkedin: "https://www.linkedin.com/in/samantha-lipari/",
     github: "https://github.com/samlipari",
-    website: "https://samanthalipari.com",
+    website: "https://www.samanthalipari.com",
   },
   {
     image: drew,

@@ -43,7 +43,7 @@ function CaseStudy() {
           <DemoCarousel clipInfo={introDemo} targetId={"intro"} />
 
           <h3 id="section-1-1" className={subHeaderStyle}>
-            1.1 What is a PaaS
+            1.1. What is a PaaS
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -53,7 +53,7 @@ function CaseStudy() {
             sit amet dapibus in, iaculis tristique mi.
           </p>
           <h3 id="section-1-2" className={subHeaderStyle}>
-            1.2 Deployment Strategies
+            1.2. Deployment Strategies
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -63,7 +63,7 @@ function CaseStudy() {
             sit amet dapibus in, iaculis tristique mi.
           </p>
           <h3 id="section-1-3" className={subHeaderStyle}>
-            1.3 Use Case: Apps-R-Us
+            1.3. Use Case: Apps-R-Us
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -73,7 +73,7 @@ function CaseStudy() {
             sit amet dapibus in, iaculis tristique mi.
           </p>
           <h3 id="section-1-4" className={subHeaderStyle}>
-            1.4 Sentinel vs. Other PaaS
+            1.4. Sentinel vs. Other PaaS
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -83,7 +83,7 @@ function CaseStudy() {
             sit amet dapibus in, iaculis tristique mi.
           </p>
           <h3 id="section-1-5" className={subHeaderStyle}>
-            1.5 Sentinel’s Goals
+            1.5. Sentinel’s Goals
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -98,7 +98,7 @@ function CaseStudy() {
             2. Infrastructure
           </h2>
           <h3 id="section-2-1" className={subHeaderStyle}>
-            2.1 Cloud-Provider Agnostic
+            2.1. Cloud-Provider Agnostic
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -107,10 +107,8 @@ function CaseStudy() {
             Fusce elit ligula, hendrerit at enim viverra, porttitor egestas metus. Donec massa lacus, imperdiet
             sit amet dapibus in, iaculis tristique mi.
           </p>
-
-
           <h3 id="section-2-2" data-section="section-2" className={subHeaderStyle}>
-            2.2 High-Level Infrastructure Overview
+            2.2. High-Level Infrastructure Overview
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -126,7 +124,7 @@ function CaseStudy() {
           />
 
           <h3 id="section-2-3" className={subHeaderStyle}>
-            2.3 Containerized Applications
+            2.3. Containerized Applications
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -151,7 +149,7 @@ function CaseStudy() {
             sit amet dapibus in, iaculis tristique mi.
           </p>
           <h3 id="section-3-1" className={subHeaderStyle}>
-            3.1 Horizontal Scaling
+            3.1. Considerations for Managing Containerized Applications Across Compute Instances
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -160,25 +158,8 @@ function CaseStudy() {
             Fusce elit ligula, hendrerit at enim viverra, porttitor egestas metus. Donec massa lacus, imperdiet
             sit amet dapibus in, iaculis tristique mi.
           </p>
-          <img
-            src={buyingOptions}
-            alt="the logos of existing solutions"
-            className={`${imgStyle} w-8/12`}
-          />
-
           <h3 id="section-3-2" className={subHeaderStyle}>
-            3.2 Considerations for Managing Containerized Applications Across Compute Instances
-          </h3>
-          <p className={paragraphStyle}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
-            Quisque auctor ipsum sed diam placerat consequat. Integer aliquam nibh rhoncus interdum lobortis.
-            Cras hendrerit egestas dolor. Vestibulum diam tortor, dictum et consequat quis, gravida nec est.
-            Fusce elit ligula, hendrerit at enim viverra, porttitor egestas metus. Donec massa lacus, imperdiet
-            sit amet dapibus in, iaculis tristique mi.
-          </p>
-
-          <h3 id="section-3-3" className={subHeaderStyle}>
-            3.3 Container Orchestration
+            3.2. Container Orchestration
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -193,9 +174,8 @@ function CaseStudy() {
             alt="solution comparison"
             className={`${imgStyle} -mb-10`}
           />
-
-          <h3 id="section-3-4" className={subHeaderStyle}>
-            3.4 Docker Swarm Mode
+          <h3 id="section-3-3" className={subHeaderStyle}>
+            3.3. Docker Swarm Mode
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -206,8 +186,8 @@ function CaseStudy() {
           </p>
           <p className={paragraphStyle}>Lorem ipsum dolor sit amet</p>
 
-          <h3 id="section-3-5" className={subHeaderStyle}>
-            3.5 How Docker Swarm Mode Works
+          <h3 id="section-3-4" className={subHeaderStyle}>
+            3.4. How Docker Swarm Mode Works
           </h3>
           <DemoCarousel clipInfo={scalingDemo} targetId={"scalingDemo"} />
           <p className={paragraphStyle}>
@@ -219,8 +199,8 @@ function CaseStudy() {
           </p>
           <p className={paragraphStyle}>Lorem ipsum dolor sit amet</p>
 
-          <h3 id="section-3-6" className={subHeaderStyle}>
-            3.6 Application & Cluster Scaling
+          <h3 id="section-3-5" className={subHeaderStyle}>
+            3.5. Application & Cluster Scaling
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -237,7 +217,7 @@ function CaseStudy() {
             4. Inter-service Communication
           </h2>
           <h3 id="section-4-1" className={subHeaderStyle}>
-            4.1 One Process Principle
+            4.1. One Process Principle
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -253,7 +233,7 @@ function CaseStudy() {
           />
 
           <h3 id="section-4-2" className={subHeaderStyle}>
-            4.2 Overlay Networks
+            4.2. Overlay Networks
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -270,7 +250,7 @@ function CaseStudy() {
             5. Routing HTTP Requests
           </h2>
           <h3 id="section-5-1" className={subHeaderStyle}>
-            5.1 Incorporating a Reverse Proxy
+            5.1. Incorporating a Reverse Proxy
           </h3>
           <ul className={listNumStyle}>
             <li className={`${listElementStyle} pl-4`}>
@@ -279,7 +259,7 @@ function CaseStudy() {
           </ul>
 
           <h3 id="section-5-2" className={subHeaderStyle}>
-            5.2 Choosing a Reverse Proxy
+            5.2. Choosing a Reverse Proxy
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -305,7 +285,7 @@ function CaseStudy() {
           <p className={paragraphStyle}>Let's start with Kafka.</p>
 
           <h3 id="section-6-1" className={subHeaderStyle}>
-            6.1 Deploying a Canary
+            6.1. Deploying a Canary
           </h3>
           <h4 className={subSubHeaderStyle}>
             Lorem ipsum
@@ -345,9 +325,8 @@ function CaseStudy() {
           <img src={kafkaInAction} alt="Kafka in action" className={`${imgStyle} lg:w-3/4`} />
 
           <h3 id="section-6-2" className={subHeaderStyle}>
-            6.2 Traefik Configuration Overview
+            6.2. Promoting a Canary
           </h3>
-
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
             Quisque auctor ipsum sed diam placerat consequat. Integer aliquam nibh rhoncus interdum lobortis.
@@ -357,29 +336,7 @@ function CaseStudy() {
           </p>
 
           <h3 id="section-6-3" className={subHeaderStyle}>
-            6.3 Traefik Configuration for Canaries
-          </h3>
-          <p className={paragraphStyle}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
-            Quisque auctor ipsum sed diam placerat consequat. Integer aliquam nibh rhoncus interdum lobortis.
-            Cras hendrerit egestas dolor. Vestibulum diam tortor, dictum et consequat quis, gravida nec est.
-            Fusce elit ligula, hendrerit at enim viverra, porttitor egestas metus. Donec massa lacus, imperdiet
-            sit amet dapibus in, iaculis tristique mi.
-          </p>
-
-          <h3 id="section-6-4" className={subHeaderStyle}>
-            6.4 Promoting a Canary
-          </h3>
-          <p className={paragraphStyle}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
-            Quisque auctor ipsum sed diam placerat consequat. Integer aliquam nibh rhoncus interdum lobortis.
-            Cras hendrerit egestas dolor. Vestibulum diam tortor, dictum et consequat quis, gravida nec est.
-            Fusce elit ligula, hendrerit at enim viverra, porttitor egestas metus. Donec massa lacus, imperdiet
-            sit amet dapibus in, iaculis tristique mi.
-          </p>
-
-          <h3 id="section-6-5" className={subHeaderStyle}>
-            6.5 Rolling a Canary Back
+            6.3. Rolling a Canary Back
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -401,7 +358,7 @@ function CaseStudy() {
             sit amet dapibus in, iaculis tristique mi.
           </p>
           <h3 id="section-7-1" className={subHeaderStyle}>
-            7.1 Monitoring Architecture Overview
+            7.1. Monitoring Architecture Overview
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -412,7 +369,7 @@ function CaseStudy() {
           </p>
 
           <h3 id="section-7-2" className={subHeaderStyle}>
-            7.2 Monitoring a Canary Instance
+            7.2. Monitoring a Canary Instance
           </h3>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
@@ -422,7 +379,7 @@ function CaseStudy() {
             sit amet dapibus in, iaculis tristique mi.
           </p>
 
-          <h2 id="section-8" className={headerStyle}>8. Upcoming Work</h2>
+          <h2 id="section-8" className={headerStyle}>8. Getting Started with Sentinel</h2>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
             Quisque auctor ipsum sed diam placerat consequat. Integer aliquam nibh rhoncus interdum lobortis.
@@ -431,7 +388,7 @@ function CaseStudy() {
             sit amet dapibus in, iaculis tristique mi.
           </p>
 
-          <h2 id="section-9" className={headerStyle}>9. References</h2>
+          <h2 id="section-9" className={headerStyle}>9. Upcoming Work</h2>
           <p className={paragraphStyle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique sem, vel aliquam nisl.
             Quisque auctor ipsum sed diam placerat consequat. Integer aliquam nibh rhoncus interdum lobortis.

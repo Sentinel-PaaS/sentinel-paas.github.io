@@ -25,8 +25,8 @@ function Nav() {
           <button className="mx-4 hover:text-raisin" onClick={() => navigateTo("case-study")}>Case Study</button>
           <button className="mx-4 hover:text-raisin" onClick={() => navigateTo("presentation")}>Presentation</button>
           <button className="mx-4 hover:text-raisin" onClick={() => navigateTo("our-team")}>Our Team</button>
-          <a href="https://github.com/Sentinel-PaaS/Sentinel-cli/tree/main/sentinel" className="mx-4 hover:text-raisin">Docs</a>
-          <a href="https://github.com/Sentinel-PaaS" className="mx-4 w-20"><img src={icon} className="w-full h-10" alt="The github logo" /></a>
+          <a href="https://github.com/Sentinel-PaaS/Sentinel-cli/tree/main/sentinel" rel="noreferrer noopener" target="_blank" className="mx-4 hover:text-raisin">Docs</a>
+          <a href="https://github.com/Sentinel-PaaS" rel="noreferrer noopener" target="_blank" className="mx-4 w-20"><img src={icon} className="w-full h-10" alt="The github logo" /></a>
         </nav>
         <img src={menuIcon} alt="a dropdown menu icon" className="lg:hidden block w-8 h-8 mr-6" onClick={() => setShowMenu(!showMenu)} />
       </div>
