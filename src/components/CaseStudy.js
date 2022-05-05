@@ -29,6 +29,13 @@ import paasChart from "../images/sentinel_diagrams/paas-chart.png"
 import heroku from "../images/sentinel_diagrams/heroku.png"
 import isolation from "../images/sentinel_diagrams/isolation.png"
 import containers from "../images/sentinel_diagrams/containers.png"
+import blueGreen from "../images/sentinel_diagrams/blue_green.png"
+import greenBlue from "../images/sentinel_diagrams/green_blue.png"
+
+import canary1 from "../images/sentinel_diagrams/canary_1.png"
+import canary2 from "../images/sentinel_diagrams/canary_2.png"
+import canary3 from "../images/sentinel_diagrams/canary_3.png"
+import canary4 from "../images/sentinel_diagrams/canary_4.png"
 
 
 import CaseStudyNav from "./CaseStudyNav";
@@ -94,7 +101,7 @@ function CaseStudy() {
             1.2. Deployment Strategies
           </h3>
           <p className={paragraphStyle}>
-            There are several deployment strategies that developers can use to deploy updates to their applications.<sup><a href="#fn2">2</a></sup> An ideal deployment strategy would adhere to the following guidelines: 
+            There are several deployment strategies that developers can use to deploy updates to their applications.<sup><a href="#fn2">2</a></sup> An ideal deployment strategy would adhere to the following guidelines:
           </p>
           <ul className={listDiscStyle}>
             <li className={`${listElementStyle} pl-4`}>
@@ -113,9 +120,19 @@ function CaseStudy() {
           <p className={paragraphStyle}>
             One strategy is blue-green deployments. This technique utilizes two identical environments, a “blue” (production) and a “green” (staging) environment. These environments are identical with the exception of the application version.
           </p>
+          <img
+            src={blueGreen}
+            alt="blue green deployment"
+            className={imgStyle}
+          />
           <p className={paragraphStyle}>
             The staging environment will host the new version which will undergo testing, done by the developers, while the production environment will contain the existing application and is handling real users requests. Once testing on the staging environment is complete, all requests are shifted from the production (blue) environment to the staging (green) environment thus making the staging environment the new production environment.
           </p>
+          <img
+            src={greenBlue}
+            alt="blue green deployment"
+            className={imgStyle}
+          />
           <strong><p className={paragraphStyle}>Pros:</p></strong>
           <ul className={listDiscStyle}>
             <li className={`${listElementStyle} pl-4`}>
@@ -188,15 +205,35 @@ function CaseStudy() {
           <p className={paragraphStyle}>
             The general idea behind canary deployments is to split off a small portion of the user traffic from the current production version and direct it to the new version of the application. This cautious approach mitigates any adverse consequences that may occur as a result of introducing unforeseen bugs, as only a small percentage of users would be affected. Splitting traffic can target specific user groups, such as by geographic region. However, the diagram below depicts a simple rule wherein 20% of all requests are diverted to the new version of the application.
           </p>
+          <img
+            src={canary1}
+            alt="canary stage 1"
+            className={imgStyle}
+          />
           <p className={paragraphStyle}>
             If faced with a bad deployment and the need to rollback, traffic is no longer sent to the new application and the original production version handles 100% of the requests.
           </p>
+          <img
+            src={canary4}
+            alt="canary bad deployment"
+            className={imgStyle}
+          />
           <p className={paragraphStyle}>
             But, in the event that the canary is performing well, traffic to the canary can be increased incrementally, gradually bolstering confidence that the new version is production ready.
           </p>
+          <img
+            src={canary2}
+            alt="canary traffic increase"
+            className={imgStyle}
+          />
           <p className={paragraphStyle}>
             When a developer is confident that the canary version is healthy, it can be promoted to the new production version. Depending on whether there are multiple instances of the production application running, the canary promotion process may need to incorporate some of the procedures from rolling deployments, previously discussed.
           </p>
+          <img
+            src={canary3}
+            alt="canary promote"
+            className={imgStyle}
+          />
           <strong><p className={paragraphStyle}>Pros:</p></strong>
           <ul className={listDiscStyle} >
             <li className={`${listElementStyle} pl-4`}>
@@ -229,7 +266,7 @@ function CaseStudy() {
             1.3. Use Case: Apps-R-Us
           </h3>
           <p className={paragraphStyle}>
-            To illustrate who might benefit from Sentinel, imagine a growing business called Apps-R-Us. Apps-R-Us is a web development consultancy, and anyone can hire them to build their web apps. On any given day they would be responsible for developing new applications or updating existing ones. For example, they could be making grade-tracking software for a local school district, while simultaneously making updates to a registration portal for a local sports league. 
+            To illustrate who might benefit from Sentinel, imagine a growing business called Apps-R-Us. Apps-R-Us is a web development consultancy, and anyone can hire them to build their web apps. On any given day they would be responsible for developing new applications or updating existing ones. For example, they could be making grade-tracking software for a local school district, while simultaneously making updates to a registration portal for a local sports league.
           </p>
           <p className={paragraphStyle}>
             Apps-R-Us is responsible for many applications at different stages of development and are in need of a PaaS that can manage the infrastructure when deploying applications as well as updating existing ones. They want their development team to focus on what matters most– developing their applications. Due to their diverse clientele, they want control over the PaaS in order to tailor it to their clients’ needs. The problems that Apps-R-Us faces are common and illustrate our motivation behind why we built Sentinel. As we go over Sentinel’s design in more detail in what follows, we’ll periodically check in with Apps-R-Us to see how Sentinel meets their needs.
@@ -261,13 +298,13 @@ function CaseStudy() {
             On the other hand, there are open source PaaS providers, such as CapRover. With the open source option, development teams will have more control because there is no longer a 3rd party managing the platform. Developers have unimpeded access to the source code, which means they have the opportunity to shape it to their needs. To summarize these tradeoffs: while the open-source options provide more flexibility and are cheaper, they lack many of the features and support provided by a closed-source option.
           </p>
           <p className={paragraphStyle}>
-          A business such as Apps-R-Us wants a streamlined way to deploy applications, and a cautious way of upgrading those applications, but does not need all the bells and whistles–or want the costs–involved with a closed-source PaaS. For such companies, Sentinel strikes the right balance.
+            A business such as Apps-R-Us wants a streamlined way to deploy applications, and a cautious way of upgrading those applications, but does not need all the bells and whistles–or want the costs–involved with a closed-source PaaS. For such companies, Sentinel strikes the right balance.
           </p>
           <h3 id="section-1-5" className={subHeaderStyle}>
             1.5. Sentinel’s Goals
           </h3>
           <p className={paragraphStyle}>
-            We now have a solid understanding of what Sentinel is and what it means to be an open source, cloud-agnostic, platform as a service with built in support for canary deployments. As a brief recap, when we set out to build Sentinel we had the following goals in mind: 
+            We now have a solid understanding of what Sentinel is and what it means to be an open source, cloud-agnostic, platform as a service with built in support for canary deployments. As a brief recap, when we set out to build Sentinel we had the following goals in mind:
           </p>
           <ul className={listDiscStyle}>
             <li className={`${listElementStyle} pl-4`}>
@@ -357,7 +394,7 @@ function CaseStudy() {
             A better solution for our use case is containerized applications (pictured on the right hand side of the diagram). With containerized applications, isolation is still achieved, but at the process level.<sup><a href="#fn10">10</a></sup> This is much less resource intensive than isolating a whole emulated OS (just look at how many more containers fit on the right-hand side of the diagram!). And as for dependencies, even if the host operating system does not have all the dependencies necessary for running an application, if it has Docker installed, it can run a container with those dependencies, without installing them on the host computer. This allows users to deploy any app they like, as long as it’s containerized.
           </p>
           <p className={paragraphStyle}>
-            Just to illustrate how this looks in the context of Sentinel’s overall architecture, we can zoom in on one of the nodes in the cluster, and see that it has many containerized applications on it: 
+            Just to illustrate how this looks in the context of Sentinel’s overall architecture, we can zoom in on one of the nodes in the cluster, and see that it has many containerized applications on it:
           </p>
           <img
             src={containers}
@@ -452,12 +489,12 @@ function CaseStudy() {
             3.3. Docker Swarm Mode
           </h3>
           <p className={paragraphStyle}>
-            While researching container orchestrators, we considered AWS Elastic Container Service but quickly ruled it out. In keeping with a cloud agnostic approach, Sentinel 
+            While researching container orchestrators, we considered AWS Elastic Container Service but quickly ruled it out. In keeping with a cloud agnostic approach, Sentinel
             should not be tied to a cloud provider for such a major piece of functionality. We also considered Kubernetes, but it provided more functionality than our use case required, so the added complexity was not justified.
           </p>
           <p className={paragraphStyle}>
             Docker Swarm Mode was the clear choice. It’s built into any Docker deployment, and it seamlessly integrates with other Docker tools like the Docker CLI and Docker Compose. It also provides the ability to interact with servers running in Docker swarm mode via Docker API calls. It has robust documentation with the benefit of ease of use and overall provides the appropriate functionality for our use case.
-            </p>
+          </p>
 
           <h3 id="section-3-4" className={subHeaderStyle}>
             3.4. How Docker Swarm Mode Works
@@ -466,7 +503,7 @@ function CaseStudy() {
             Let’s examine more closely how exactly Docker Swarm Mode works and how it can be used to deploy an application.
           </p>
           <p className={paragraphStyle}>
-            A swarm is a collection of servers running Docker in swarm mode that act as Managers and Workers. 
+            A swarm is a collection of servers running Docker in swarm mode that act as Managers and Workers.
           </p>
           <ul className={listDiscStyle}>
             <li className={`${listElementStyle} pl-4`}>
@@ -567,7 +604,7 @@ function CaseStudy() {
             className={`${imgStyle}`}
           />
           <p className={paragraphStyle}>
-            The better solution is to use a private network to connect the reverse proxy with applications that need to receive the forwarded requests. Given that Sentinel uses Docker Swarm Mode as a container orchestrator, the built-in overlay networks can be used to accomplish this. Sentinel runs the reverse proxy as a Docker service on the Manager node, creates a new overlay network, and adds the reverse proxy along with all internet facing apps to this network. The reverse proxy then uses Docker’s built-in DNS system to route requests to the applications according to their Docker service name, taking full advantage of the security benefits of overlay networks already outlined above. 
+            The better solution is to use a private network to connect the reverse proxy with applications that need to receive the forwarded requests. Given that Sentinel uses Docker Swarm Mode as a container orchestrator, the built-in overlay networks can be used to accomplish this. Sentinel runs the reverse proxy as a Docker service on the Manager node, creates a new overlay network, and adds the reverse proxy along with all internet facing apps to this network. The reverse proxy then uses Docker’s built-in DNS system to route requests to the applications according to their Docker service name, taking full advantage of the security benefits of overlay networks already outlined above.
           </p>
           <img
             src={reverseProxy2}
@@ -600,7 +637,7 @@ function CaseStudy() {
               <p className={listTextStyle}>Deploy a canary with an initial traffic weight and sticky sessions settings</p>
               <li className={`${listElementStyle} pl-4`}>
                 <p className={listTextStyle}>Change the amount of traffic being diverted to the canary</p>
-            </li>
+              </li>
             </li>
             <li className={`${listElementStyle} pl-4`}>
               <p className={listTextStyle}>Promote the canary</p>
@@ -619,7 +656,7 @@ function CaseStudy() {
             6.1. Deploying a Canary
           </h3>
           <p className={paragraphStyle}>
-            Deploying a canary is done via the <code>sentinel canary deploy</code> command. The canary deploy process starts with running the new version as a separate Docker service. The process continues by making use of at least one, and potentially two, overlay networks. Firstly, if the application uses a database, the canary is connected to that application-specific overlay network alongside the production version and database service, to facilitate inter-service communication, as depicted in the diagram below: 
+            Deploying a canary is done via the <code>sentinel canary deploy</code> command. The canary deploy process starts with running the new version as a separate Docker service. The process continues by making use of at least one, and potentially two, overlay networks. Firstly, if the application uses a database, the canary is connected to that application-specific overlay network alongside the production version and database service, to facilitate inter-service communication, as depicted in the diagram below:
           </p>
           <img
             src={overlay2}
@@ -634,7 +671,7 @@ function CaseStudy() {
             Traefik Configuration Overview
           </h4>
           <p className={paragraphStyle}>
-            Traefik’s configuration is broken up into two separate categories: its “static” configuration, which is set when Traefik is first started up and cannot be adjusted without restarting the service, and its “dynamic” configuration which can be adjusted while the service is running. The “static” configuration contains general settings for logging, metrics, certificate resolvers, and entry points, among other things, and it is where the providers are defined. 
+            Traefik’s configuration is broken up into two separate categories: its “static” configuration, which is set when Traefik is first started up and cannot be adjusted without restarting the service, and its “dynamic” configuration which can be adjusted while the service is running. The “static” configuration contains general settings for logging, metrics, certificate resolvers, and entry points, among other things, and it is where the providers are defined.
           </p>
           <img
             src={providers}
@@ -642,10 +679,10 @@ function CaseStudy() {
             className={`${imgStyle}`}
           />
           <p className={paragraphStyle}>
-            Providers are essentially the different places that Traefik looks to get its dynamic configuration. They are called “providers” because they provide the configuration to Traefik. According to Traefik’s documentation, providers are, “infrastructure components, whether orchestrators, container engines, cloud providers, or key-value stores.” Essentially, the providers are defined in the “static” configuration, and then Traefik queries the providers at regular intervals, either via their APIs or by watching a particular file directory, for information relevant to routing. When Traefik detects a change, it updates its routes. The way that each provider provides its dynamic configuration varies. 
+            Providers are essentially the different places that Traefik looks to get its dynamic configuration. They are called “providers” because they provide the configuration to Traefik. According to Traefik’s documentation, providers are, “infrastructure components, whether orchestrators, container engines, cloud providers, or key-value stores.” Essentially, the providers are defined in the “static” configuration, and then Traefik queries the providers at regular intervals, either via their APIs or by watching a particular file directory, for information relevant to routing. When Traefik detects a change, it updates its routes. The way that each provider provides its dynamic configuration varies.
           </p>
           <p className={paragraphStyle}>
-            Of the providers that Sentinel uses, the first one we’ll talk about is the File provider. Traefik is told to watch a certain directory, and it adjusts accordingly if certain configuration files in this directory are added, removed or edited. For example, in the case of canaries, Traefik watches a file that indicates how to split the traffic between the production and canary services. 
+            Of the providers that Sentinel uses, the first one we’ll talk about is the File provider. Traefik is told to watch a certain directory, and it adjusts accordingly if certain configuration files in this directory are added, removed or edited. For example, in the case of canaries, Traefik watches a file that indicates how to split the traffic between the production and canary services.
           </p>
           <p className={paragraphStyle}>
             The other provider Sentinel uses is Docker. Specifying Docker as a provider puts Traefik on the lookout for new applications deployed with Sentinel. Specifying that Docker is running in Swarm Mode is also done in the static configuration. When new Docker services are actually deployed, Traefik gets new dynamic configurations through labels that are added to those Docker services. These labels can be added, edited, or removed while the Docker service is running which allows for dynamic updates to the routing rules associated with a given service. Now that we've given an overview of Traefik’s configuration, let’s examine how this applies to canary deployments.
@@ -653,7 +690,7 @@ function CaseStudy() {
 
           <h4 className={subSubHeaderStyle}>Traefik Configuration for Canaries</h4>
           <p className={paragraphStyle}>
-            When deploying a canary, Sentinel adds a dynamic configuration file that defines traffic splitting weights for the production and canary services for an application. Users can also change these weights after the canary has been deployed using the <code>sentinel canary traffic</code> command. This configuration file will also include sticky session settings if the developer has selected that feature for this canary. 
+            When deploying a canary, Sentinel adds a dynamic configuration file that defines traffic splitting weights for the production and canary services for an application. Users can also change these weights after the canary has been deployed using the <code>sentinel canary traffic</code> command. This configuration file will also include sticky session settings if the developer has selected that feature for this canary.
           </p>
           <img
             src={dynamicConfig}
@@ -831,7 +868,7 @@ function CaseStudy() {
 
           <h2 id="section-9" className={headerStyle}>9. Upcoming Work</h2>
           <p className={paragraphStyle}>
-          And that’s Sentinel! Of course, we’re always working to improve the platform, and here is some of our upcoming work:
+            And that’s Sentinel! Of course, we’re always working to improve the platform, and here is some of our upcoming work:
           </p>
           <ul className={`${listDiscStyle}`}>
             <li className={`${listElementStyle} pl-4`}>
