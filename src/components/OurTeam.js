@@ -1,5 +1,5 @@
 import michael from "../images/team/Sentinel_logo_on_dark_circle.png";
-import brendan from "../images/team/Sentinel_logo_on_dark_circle.png";
+import brendan from "../images/team/brendan.jpg";
 import sam from "../images/team/sam.jpg";
 import drew from "../images/team/Sentinel_logo_on_dark_circle.png";
 
@@ -18,7 +18,7 @@ const teamMembers = [
   {
     image: brendan,
     name: "Brendan Leal",
-    location: "Orange County, CA",
+    location: "Southern California",
     email: "leal.brendan@gmail.com",
     linkedin: "https://www.linkedin.com/in/brendan-leal-667694223",
     github: "https://github.com/Brendan-Leal",
