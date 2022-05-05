@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.7f03db4b.chunk.css",
-    "main.js": "/static/js/main.20063fc8.chunk.js",
-    "main.js.map": "/static/js/main.20063fc8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.27a510cb.js",
-    "runtime-main.js.map": "/static/js/runtime-main.27a510cb.js.map",
-    "static/js/2.20186202.chunk.js": "/static/js/2.20186202.chunk.js",
-    "static/js/2.20186202.chunk.js.map": "/static/js/2.20186202.chunk.js.map",
+    "main.css": "/static/css/main.67641a95.chunk.css",
+    "main.js": "/static/js/main.e5b3d22e.chunk.js",
+    "main.js.map": "/static/js/main.e5b3d22e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c49078c3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c49078c3.js.map",
+    "static/js/2.d25a4ff6.chunk.js": "/static/js/2.d25a4ff6.chunk.js",
+    "static/js/2.d25a4ff6.chunk.js.map": "/static/js/2.d25a4ff6.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.7f03db4b.chunk.css.map": "/static/css/main.7f03db4b.chunk.css.map",
-    "static/js/2.20186202.chunk.js.LICENSE.txt": "/static/js/2.20186202.chunk.js.LICENSE.txt",
+    "static/css/main.67641a95.chunk.css.map": "/static/css/main.67641a95.chunk.css.map",
+    "static/js/2.d25a4ff6.chunk.js.LICENSE.txt": "/static/js/2.d25a4ff6.chunk.js.LICENSE.txt",
+    "static/media/Overall_Architecture.8930fb38.gif": "/static/media/Overall_Architecture.8930fb38.gif",
     "static/media/Sentinel_logo_on_dark.20294784.svg": "/static/media/Sentinel_logo_on_dark.20294784.svg",
     "static/media/Sentinel_logo_on_dark_circle.fe7432f4.png": "/static/media/Sentinel_logo_on_dark_circle.fe7432f4.png",
     "static/media/abstractions.9121feb4.png": "/static/media/abstractions.9121feb4.png",
@@ -27,6 +28,7 @@
     "static/media/canary_4.a360f240.png": "/static/media/canary_4.a360f240.png",
     "static/media/canary_deploy.332d3c8f.mp4": "/static/media/canary_deploy.332d3c8f.mp4",
     "static/media/canary_promote.8c347fab.mp4": "/static/media/canary_promote.8c347fab.mp4",
+    "static/media/cli-v3.ea706e32.png": "/static/media/cli-v3.ea706e32.png",
     "static/media/cli.24bad47e.png": "/static/media/cli.24bad47e.png",
     "static/media/cluster-inspect.0af82690.png": "/static/media/cluster-inspect.0af82690.png",
     "static/media/cluster_inspect.9960e2f2.mp4": "/static/media/cluster_inspect.9960e2f2.mp4",
@@ -54,6 +56,7 @@
     "static/media/labels.cc97e46e.png": "/static/media/labels.cc97e46e.png",
     "static/media/linkedin.36e3c5fe.svg": "/static/media/linkedin.36e3c5fe.svg",
     "static/media/menu.36dfa9b1.svg": "/static/media/menu.36dfa9b1.svg",
+    "static/media/mf_headshot_square.e6217648.jpg": "/static/media/mf_headshot_square.e6217648.jpg",
     "static/media/monitoring.73a7a058.gif": "/static/media/monitoring.73a7a058.gif",
     "static/media/networking.6540e4e9.png": "/static/media/networking.6540e4e9.png",
     "static/media/one-process.f7d5be2b.png": "/static/media/one-process.f7d5be2b.png",
@@ -69,14 +72,14 @@
     "static/media/sam.4baee2dc.jpg": "/static/media/sam.4baee2dc.jpg",
     "static/media/scale_app.ed433a89.mp4": "/static/media/scale_app.ed433a89.mp4",
     "static/media/scaling.6d6b6330.png": "/static/media/scaling.6d6b6330.png",
-    "static/media/sentinel_overall_architecture_2.244bf152.png": "/static/media/sentinel_overall_architecture_2.244bf152.png",
+    "static/media/sentinel_upper_left.13c5f140.png": "/static/media/sentinel_upper_left.13c5f140.png",
     "static/media/show_canary_todos_browser.6de4af4c.mp4": "/static/media/show_canary_todos_browser.6de4af4c.mp4",
     "static/media/website.da1ff378.svg": "/static/media/website.da1ff378.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.27a510cb.js",
-    "static/js/2.20186202.chunk.js",
-    "static/css/main.7f03db4b.chunk.css",
-    "static/js/main.20063fc8.chunk.js"
+    "static/js/runtime-main.c49078c3.js",
+    "static/js/2.d25a4ff6.chunk.js",
+    "static/css/main.67641a95.chunk.css",
+    "static/js/main.e5b3d22e.chunk.js"
   ]
 }
