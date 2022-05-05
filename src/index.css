@@ -128,3 +128,12 @@ h6 {
   left: 0;
   top: 0;
 }
+
+#divide {
+  border-top: 2px solid black;
+}
+
+code {
+  font-size: larger;
+  color: #E07F00;
+}
