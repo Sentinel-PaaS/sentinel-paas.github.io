@@ -37,8 +37,8 @@ const teamMembers = [
     image: drew,
     name: "Drew Sessler",
     location: "Seattle, WA",
-    email: "drew@gmail.com",
-    linkedin: "",
+    email: "drew.sessler@gmail.com",
+    linkedin: "https://www.linkedin.com/in/drew-sessler-3816601b/",
     github: "https://github.com/dsessler7",
     website: "https://www.dummysite.dev/"
   }
