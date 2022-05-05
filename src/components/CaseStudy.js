@@ -1,7 +1,4 @@
-import monolithDiagram from "../images/sentinel_diagrams/sentinel_overall_architecture_2.png";
-import overview from "../images/sentinel_diagrams/sentinel_overall_architecture_2.png";
-import bufferingOptions from "../images/sentinel_diagrams/sentinel_overall_architecture_2.png";
-import kafkaInAction from "../images/sentinel_diagrams/sentinel_overall_architecture_2.png";
+import monolithDiagram from "../images/sentinel_diagrams/Overall_Architecture.gif";
 import distribution from "../images/sentinel_diagrams/distribution.png"
 import scaling from "../images/sentinel_diagrams/scaling.png"
 import restart from "../images/sentinel_diagrams/restart.png"
@@ -77,7 +74,7 @@ function CaseStudy() {
           <img
             src={cli}
             alt="CLI commands"
-            className={imgStyle}
+            className={imgStyle+" large-img"}
           />
           <p className={paragraphStyle}>
             There were numerous engineering challenges and design decisions our team faced during the creation of Sentinel which we will focus on throughout this case study. Before we get into a discussion of Sentinel’s design, we’ll first provide some context by defining platform as a service, comparing canaries to other deployments strategies, and providing an overview of existing solutions in this area.
@@ -92,7 +89,7 @@ function CaseStudy() {
           <img
             src={abstractions}
             alt="-aas Abstraction Diagram"
-            className={imgStyle}
+            className={imgStyle+" medium-img"}
           />
           <p className={paragraphStyle}>
             Sentinel provides developers with all the functionality expected of a PaaS. But part of what sets Sentinel apart, is that apps hosted on it can easily be upgraded via canary deployments. So before comparing Sentinel explicitly to other options in this domain, a brief review of deployments options, and the benefits of canary deployments, is in order.
@@ -123,7 +120,7 @@ function CaseStudy() {
           <img
             src={blueGreen}
             alt="blue green deployment"
-            className={imgStyle}
+            className={imgStyle+" deployment-img"}
           />
           <p className={paragraphStyle}>
             The staging environment will host the new version which will undergo testing, done by the developers, while the production environment will contain the existing application and is handling real users requests. Once testing on the staging environment is complete, all requests are shifted from the production (blue) environment to the staging (green) environment thus making the staging environment the new production environment.
@@ -131,7 +128,7 @@ function CaseStudy() {
           <img
             src={greenBlue}
             alt="blue green deployment"
-            className={imgStyle}
+            className={imgStyle+" deployment-img"}
           />
           <strong><p className={paragraphStyle}>Pros:</p></strong>
           <ul className={listDiscStyle}>
@@ -175,7 +172,7 @@ function CaseStudy() {
           <img
             src={rollingDeploy}
             alt="Rolling Deployments"
-            className={imgStyle}
+            className={imgStyle+" deployment-img"}
           />
           <strong><p className={paragraphStyle}>Pros:</p></strong>
           <ul className={listDiscStyle}>
@@ -208,7 +205,7 @@ function CaseStudy() {
           <img
             src={canary1}
             alt="canary stage 1"
-            className={imgStyle}
+            className={imgStyle+" deployment-img"}
           />
           <p className={paragraphStyle}>
             If faced with a bad deployment and the need to rollback, traffic is no longer sent to the new application and the original production version handles 100% of the requests.
@@ -216,7 +213,7 @@ function CaseStudy() {
           <img
             src={canary4}
             alt="canary bad deployment"
-            className={imgStyle}
+            className={imgStyle+" deployment-img"}
           />
           <p className={paragraphStyle}>
             But, in the event that the canary is performing well, traffic to the canary can be increased incrementally, gradually bolstering confidence that the new version is production ready.
@@ -224,7 +221,7 @@ function CaseStudy() {
           <img
             src={canary2}
             alt="canary traffic increase"
-            className={imgStyle}
+            className={imgStyle+" deployment-img"}
           />
           <p className={paragraphStyle}>
             When a developer is confident that the canary version is healthy, it can be promoted to the new production version. Depending on whether there are multiple instances of the production application running, the canary promotion process may need to incorporate some of the procedures from rolling deployments, previously discussed.
@@ -232,7 +229,7 @@ function CaseStudy() {
           <img
             src={canary3}
             alt="canary promote"
-            className={imgStyle}
+            className={imgStyle+" deployment-img"}
           />
           <strong><p className={paragraphStyle}>Pros:</p></strong>
           <ul className={listDiscStyle} >
@@ -281,7 +278,7 @@ function CaseStudy() {
           <img
             src={paasChart}
             alt="PaaS Chart Comparison"
-            className={imgStyle}
+            className={imgStyle+" medium-img"}
           />
           <p className={paragraphStyle}>
             The big cloud providers tend to offer their own PaaS that are tightly integrated with their cloud infrastructure. If they decide to raise the price, make significant changes, or deprecate support for something, developers have to weigh the option of whether or not it’s worth the time, effort, and money to make the switch to a new PaaS that better suits their needs. With a closed source option, users will be at the mercy of the PaaS as to when or if they make any changes to the infrastructure.
@@ -359,6 +356,7 @@ function CaseStudy() {
             src={monolithDiagram}
             alt="monolith diagram"
             className={imgStyle}
+            id="overall-architecture-img"
           />
           <p className={paragraphStyle}>
             The first thing to note is the Sentinel CLI, which is running on the developer’s computer, outside of the cloud infrastructure. When a developer runs <code>sentinel init</code>, some initial Terraform and Ansible code is triggered to create the Sentinel Control Plane.
@@ -385,7 +383,7 @@ function CaseStudy() {
           <img
             src={isolation}
             alt="VMs vs Containers"
-            className={imgStyle}
+            className={imgStyle+" medium-img"}
           />
           <p className={paragraphStyle}>
             Pictured on the left hand side of the above diagram, virtual machines involve running multiple operating systems on the same server. Though there is in fact only one machine, this is achieved by having a hypervisor divide up and emulate its resources into multiple "virtual machines" that are compatible with each guest OS. So while this does achieve isolation, it is isolation at the machine or operating system level, and it’s a very resource heavy way of achieving isolation.<sup><a href="#fn9">9</a></sup>
@@ -399,7 +397,7 @@ function CaseStudy() {
           <img
             src={containers}
             alt="Containers on node"
-            className={imgStyle}
+            className={imgStyle+" medium-img"}
           />
           <p className={paragraphStyle}>
             Not only are users’ applications deployed as containers, but so are their associated databases and monitoring tools. There are other ways of containerizing applications, but Docker was the clear choice, due to its widespread use.
@@ -434,7 +432,7 @@ function CaseStudy() {
               <img
                 src={distribution}
                 alt="distribution"
-                className={`${imgStyle}`}
+                className={imgStyle+" medium-img"}
               />
             </li>
             <li className={`${listElementStyle} pl-4`}>
@@ -442,7 +440,7 @@ function CaseStudy() {
               <img
                 src={scaling}
                 alt="scaling"
-                className={`${imgStyle}`}
+                className={imgStyle+" medium-img"}
               />
             </li>
             <li className={`${listElementStyle} pl-4`}>
@@ -450,7 +448,7 @@ function CaseStudy() {
               <img
                 src={networking}
                 alt="networking"
-                className={`${imgStyle}`}
+                className={imgStyle+" medium-img"}
               />
             </li>
             <li className={`${listElementStyle} pl-4`}>
@@ -458,7 +456,7 @@ function CaseStudy() {
               <img
                 src={restart}
                 alt="restart"
-                className={`${imgStyle}`}
+                className={imgStyle+" medium-img"}
               />
             </li>
           </ul>
@@ -747,7 +745,7 @@ function CaseStudy() {
           <img
             src={monitoring}
             alt="Monitoring Tools"
-            className={`${imgStyle}`}
+            className={imgStyle+" large-img"}
           />
           <p className={paragraphStyle}>
             Unlike Prometheus and Grafana, which only run on the manager node, <strong>Node Exporter</strong> is deployed onto every node in the cluster. The reason for this is that Node Exporter provides <em>system level</em> metrics, like disk space available, memory available, and CPU usage. If there are two nodes deployed within the Cluster, running <code>sentinel cluster inspect</code> will return information like the following:
@@ -755,7 +753,7 @@ function CaseStudy() {
           <img
             src={clusterInspect}
             alt="cluster inspect output"
-            className={`${imgStyle}`}
+            className={imgStyle+" small-img"}
           />
           <p className={paragraphStyle}>
             So, as the name suggests, Node-Exporter <em>exports</em>, or produces metrics about the node on which it is installed. But the above output isn’t produced with Node-Exporter alone. Node-Exporter exports <em>raw</em> metrics, and some way to <em>scrape</em>, or <em>read</em> those metrics, and then <em>analyze</em> them is also required, in order to turn that raw stream into what is shown above. This is where <strong>Prometheus</strong> comes in. Prometheus scrapes metrics from two sources in Sentinel’s architecture:
