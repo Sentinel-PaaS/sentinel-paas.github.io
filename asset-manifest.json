@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.67641a95.chunk.css",
-    "main.js": "/static/js/main.e5b3d22e.chunk.js",
-    "main.js.map": "/static/js/main.e5b3d22e.chunk.js.map",
+    "main.js": "/static/js/main.b34aa35f.chunk.js",
+    "main.js.map": "/static/js/main.b34aa35f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c49078c3.js",
     "runtime-main.js.map": "/static/js/runtime-main.c49078c3.js.map",
     "static/js/2.d25a4ff6.chunk.js": "/static/js/2.d25a4ff6.chunk.js",
@@ -12,7 +12,6 @@
     "static/js/2.d25a4ff6.chunk.js.LICENSE.txt": "/static/js/2.d25a4ff6.chunk.js.LICENSE.txt",
     "static/media/Overall_Architecture.8930fb38.gif": "/static/media/Overall_Architecture.8930fb38.gif",
     "static/media/Sentinel_logo_on_dark.20294784.svg": "/static/media/Sentinel_logo_on_dark.20294784.svg",
-    "static/media/Sentinel_logo_on_dark_circle.fe7432f4.png": "/static/media/Sentinel_logo_on_dark_circle.fe7432f4.png",
     "static/media/abstractions.9121feb4.png": "/static/media/abstractions.9121feb4.png",
     "static/media/index.css": "/static/media/orange_bird_no_lines_no_background.b508d8e6.png",
     "static/media/blue_green.7fd91489.png": "/static/media/blue_green.7fd91489.png",
@@ -38,6 +37,7 @@
     "static/media/deploy_catnip.34998541.mp4": "/static/media/deploy_catnip.34998541.mp4",
     "static/media/distribution.04bdfebf.png": "/static/media/distribution.04bdfebf.png",
     "static/media/docker-swarm.0161bb65.gif": "/static/media/docker-swarm.0161bb65.gif",
+    "static/media/drew_headshot.7aa7baec.png": "/static/media/drew_headshot.7aa7baec.png",
     "static/media/dynamic-config.3e773acd.png": "/static/media/dynamic-config.3e773acd.png",
     "static/media/email.21f403d1.svg": "/static/media/email.21f403d1.svg",
     "static/media/github.04be58c1.svg": "/static/media/github.04be58c1.svg",
@@ -80,6 +80,6 @@
     "static/js/runtime-main.c49078c3.js",
     "static/js/2.d25a4ff6.chunk.js",
     "static/css/main.67641a95.chunk.css",
-    "static/js/main.e5b3d22e.chunk.js"
+    "static/js/main.b34aa35f.chunk.js"
   ]
 }
