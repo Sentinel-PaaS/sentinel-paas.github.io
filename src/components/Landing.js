@@ -1,5 +1,4 @@
 import logo from "../images/sentinel_logo/SVGs/Sentinel_logo_on_dark.svg";
-import initGif from "../images/sentinel_diagrams/traefik_overlay.gif";
 import fullDiagram from "../images/sentinel_diagrams/monitoring.gif";
 import cli from "../images/sentinel_diagrams/cli.png"
 
