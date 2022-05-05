@@ -45,7 +45,7 @@ function Landing() {
       </div>
 
       {/* Start third block */}
-      <div className="hidden xl:flex h-landing bgImageThird justify-center items-center text-center bg-glaucous py-20">
+      <div className="hidden md:flex h-landing bgImageThird justify-center items-center text-center bg-glaucous py-20">
         <h2 className="text-6xl font-extrabold w-1/2">Comprehensive Monitoring</h2>
         <div className="flex flex-col w-1/2 justify-center mx-6 my-10 px-4">
           <p className="mx-auto text-3xl mb-14 px-20">
@@ -54,7 +54,7 @@ function Landing() {
           <img src={fullDiagram} alt="sentinel monitoring" className="mx-auto rounded-lg shadow-xl" />
         </div>
       </div>
-      <div className="xl:hidden flex flex-col h-landing justify-center items-center text-center bg-glaucous py-20 px-4">
+      <div className="md:hidden flex flex-col h-landing justify-center items-center text-center bg-glaucous py-20 px-4">
         <h2 className="text-4xl font-extrabold">Comprehensive Monitoring</h2>
         <p className="text-3xl my-10 px-6 max-w-5xl">
           Extensive monitoring tools to assist developers in assessing the health and performance of their applications

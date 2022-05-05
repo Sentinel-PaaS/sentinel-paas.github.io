@@ -355,7 +355,7 @@ function CaseStudy() {
           <img
             src={monolithDiagram}
             alt="monolith diagram"
-            className={imgStyle}
+            className={imgStyle+" min-w-1200"}
             id="overall-architecture-img"
           />
           <p className={paragraphStyle}>
