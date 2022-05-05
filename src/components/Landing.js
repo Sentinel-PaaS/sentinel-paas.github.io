@@ -1,6 +1,7 @@
 import logo from "../images/sentinel_logo/SVGs/Sentinel_logo_on_dark.svg";
 import initGif from "../images/sentinel_diagrams/traefik_overlay.gif";
 import fullDiagram from "../images/sentinel_diagrams/monitoring.gif";
+import cli from "../images/sentinel_diagrams/cli.png"
 
 function Landing() {
   return (
@@ -32,7 +33,7 @@ function Landing() {
           <p className="mx-auto text-3xl mb-14 px-4">
             A convenient command line interface for developers to deploy and update their applications with canary deployments
           </p>
-          <img src={initGif} alt="Sentinel initialization gif" className="mx-auto rounded-lg shadow-xl" />
+          <img src={cli} alt="Sentinel initialization gif" className="mx-auto rounded-lg shadow-xl" />
         </div>
       </div>
       <div className="xl:hidden flex flex-col justify-center items-center text-center bg-fulvous py-20 px-4">
@@ -40,7 +41,7 @@ function Landing() {
         <p className="text-3xl my-10 px-6 max-w-5xl">
           A convenient command line interface for developers to deploy and update their applications with canary deployments
         </p>
-        <img src={initGif} alt="Sentinel initialization gif" className="rounded-lg shadow-xl" />
+        <img src={cli} alt="Sentinel initialization gif" className="rounded-lg shadow-xl" />
       </div>
 
       {/* Start third block */}
