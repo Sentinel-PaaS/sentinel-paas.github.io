@@ -1,6 +1,7 @@
 {
   "name": "lodge",
   "version": "0.1.0",
+  "homepage": "https://Sentinel-PaaS.github.io/",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.2",
