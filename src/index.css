@@ -137,3 +137,25 @@ code {
   font-size: larger;
   color: #E07F00;
 }
+
+.large-img {
+  max-width: 700px;
+}
+
+.medium-img {
+  max-width: 550px;
+  max-height: 550px;
+}
+
+.small-img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.deployment-img {
+  max-width: 710px;
+}
+
+#overall-architecture-img {
+  min-width: 1200px;
+}

@@ -1,4 +1,4 @@
-import michael from "../images/team/Sentinel_logo_on_dark_circle.png";
+import michael from "../images/team/mf_headshot_square.jpg";
 import brendan from "../images/team/brendan.jpg";
 import sam from "../images/team/sam.jpg";
 import drew from "../images/team/Sentinel_logo_on_dark_circle.png";
@@ -10,10 +10,10 @@ const teamMembers = [
     image: michael,
     name: "Michael Fatigati",
     location: "Austin, TX",
-    email: "dummy-email@gmail.com",
-    linkedin: "https://www.linkedin.com/dummy-site/",
+    email: "fatigati.michael@gmail.com",
+    linkedin: "https://www.linkedin.com/in/michael-fatigati/",
     github: "https://github.com/MFatigati",
-    website: "https://dummy-site.dev/"
+    website: "https://www.michaelfatigati.dev/"
   },
   {
     image: brendan,
