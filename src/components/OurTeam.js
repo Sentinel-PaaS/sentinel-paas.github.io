@@ -1,7 +1,7 @@
 import michael from "../images/team/mf_headshot_square.jpg";
 import brendan from "../images/team/brendan.jpg";
 import sam from "../images/team/sam.jpg";
-import drew from "../images/team/Sentinel_logo_on_dark_circle.png";
+import drew from "../images/team/drew_headshot.png";
 
 import TeamMember from "./TeamMember";
 
@@ -40,7 +40,7 @@ const teamMembers = [
     email: "drew.sessler@gmail.com",
     linkedin: "https://www.linkedin.com/in/drew-sessler-3816601b/",
     github: "https://github.com/dsessler7",
-    website: "https://www.dummysite.dev/"
+    website: "https://www.drewsessler.com/"
   }
 ];
 
