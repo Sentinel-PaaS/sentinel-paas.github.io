@@ -180,10 +180,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .small-img, .medium-img, .large-img {
-    width: 90%;
-  }
-  #root {
-    width: 95%;
+  .small-img, .medium-img, .large-img, .deployment-img {
+    width: 100%;
   }
 }
