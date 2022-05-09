@@ -55,7 +55,7 @@ function CaseStudy() {
   return (
     <div className="flex">
       <CaseStudyNav />
-      <div id="case-study" className="w-xl-casestudy xl:pt-0">
+      <div id="case-study" className="w-xl-casestudy xl:pt-0 flex">
         <div className="prose ml-6 leading-9 w-10/12 text-left text-gray-700 text-xl">
           <h1 className="mt-24 mb-16 text-6xl font-black">Case Study</h1>
           {/* <!-- Section 1 --> */}
@@ -397,7 +397,7 @@ function CaseStudy() {
           <img
             src={containers}
             alt="Containers on node"
-            className={imgStyle+" medium-img"}
+            className={imgStyle+" small-img"}
           />
           <p className={paragraphStyle}>
             Not only are users’ applications deployed as containers, but so are their associated databases and monitoring tools. There are other ways of containerizing applications, but Docker was the clear choice, due to its widespread use.
@@ -432,7 +432,7 @@ function CaseStudy() {
               <img
                 src={distribution}
                 alt="distribution"
-                className={imgStyle+" medium-img"}
+                className={imgStyle+" small-img center-content ml-12"}
               />
             </li>
             <li className={`${listElementStyle} pl-4`}>
@@ -440,7 +440,7 @@ function CaseStudy() {
               <img
                 src={scaling}
                 alt="scaling"
-                className={imgStyle+" medium-img"}
+                className={imgStyle+" small-img center-content ml-12"}
               />
             </li>
             <li className={`${listElementStyle} pl-4`}>
@@ -448,7 +448,7 @@ function CaseStudy() {
               <img
                 src={networking}
                 alt="networking"
-                className={imgStyle+" medium-img"}
+                className={imgStyle+" small-img center-content ml-12"}
               />
             </li>
             <li className={`${listElementStyle} pl-4`}>
@@ -456,7 +456,7 @@ function CaseStudy() {
               <img
                 src={restart}
                 alt="restart"
-                className={imgStyle+" medium-img"}
+                className={imgStyle+" small-img center-content ml-12"}
               />
             </li>
           </ul>
@@ -517,7 +517,7 @@ function CaseStudy() {
           <img
             src={swarmGif}
             alt="Docker Swarm"
-            className={`${imgStyle}`}
+            className={`${imgStyle} large-img`}
           />
           <p className={paragraphStyle}>
             Here, there are three servers - one Manager Node and two Worker Nodes. As shown in the diagram, the application “catnip” is defined as a service and submitted to the Manager Node. As part of the service definition, the application image is set and three tasks are defined, meaning upon deployment, catnip should be scaled to three containers. The Manager Node then schedules the catnip service to run as three tasks on the available nodes. As seen here, the Worker and Manager Nodes can all run tasks. Applications can be easily scaled up or down at any time by changing the number of tasks running via a simple Docker command on the manager node.
@@ -548,7 +548,7 @@ function CaseStudy() {
           <img
             src={oneProcess}
             alt="One Process Principle"
-            className={`${imgStyle} max-w-xl -mb-8`}
+            className={`${imgStyle} small-img`}
           />
 
           <h3 id="section-4-2" className={subHeaderStyle}>
@@ -563,7 +563,7 @@ function CaseStudy() {
           <img
             src={overlay}
             alt="Overlay Networks"
-            className={`${imgStyle} -ml-16`}
+            className={`${imgStyle} large-img content-center ml-12`}
           />
           <p className={paragraphStyle}>
             At this point in the design process, we understand the role of the container orchestrator and how applications rely on it to communicate internally. In the next section, we will cover how end users can access their applications externally.
@@ -607,7 +607,7 @@ function CaseStudy() {
           <img
             src={reverseProxy2}
             alt="Reverse proxy 2"
-            className={`${imgStyle}`}
+            className={`${imgStyle} large-img`}
           />
 
           <h3 id="section-5-2" className={subHeaderStyle}>
@@ -659,7 +659,7 @@ function CaseStudy() {
           <img
             src={overlay2}
             alt="Overlay networks 2"
-            className={`${imgStyle} -ml-16`}
+            className={`${imgStyle} large-img center-content`}
           />
           <p className={paragraphStyle}>
             Secondly, database or not, the new version is added to the reverse proxy overlay network. This gets traffic flowing to the canary, but, adding the canary to the overlay network isn’t enough: the routing rules need to be updated such that requests for a given application are split between the production service and canary service. Sentinel largely accomplishes this using Traefik’s routing abilities, so in order to explain how this is implemented, we need to cover some basic Traefik concepts.
@@ -713,7 +713,7 @@ function CaseStudy() {
           <img
             src={canary}
             alt="Canary Promote"
-            className={`${imgStyle}`}
+            className={`${imgStyle} large-img`}
           />
           <p className={paragraphStyle}>
             Once all tasks have been updated, the canary service and the traffic splitting configuration file are both removed.

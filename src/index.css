@@ -54,6 +54,10 @@ h6 {
     width: 1200px;
   }
 
+  .w-sm-casestudy {
+    width: 300px;
+  }
+
   .pl-nav {
     padding-left: 400px;
   }
@@ -139,19 +143,47 @@ code {
 }
 
 .large-img {
-  max-width: 700px;
+  /* max-width: 700px; */
+  width: 70%;
 }
 
 .medium-img {
-  max-width: 550px;
-  max-height: 550px;
+/*   max-width: 550px;
+  max-height: 550px; */
+  width: 60%;
 }
 
 .small-img {
-  max-width: 400px;
-  max-height: 400px;
+/*   max-width: 400px;
+  max-height: 400px; */
+  width: 40%;
 }
 
 .deployment-img {
-  max-width: 710px;
+  /* max-width: 710px; */
+  width: 65%;
+}
+
+#case-study {
+  width: 100%;
+  flex-direction: column;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .small-img, .medium-img, .large-img {
+    width: 90%;
+  }
+  #root {
+    width: 95%;
+  }
 }
