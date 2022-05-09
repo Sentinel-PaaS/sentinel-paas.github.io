@@ -36,12 +36,12 @@ function Landing() {
         </div>
       </div>
 
-      <div className="xl:hidden flex flex-col justify-center items-center text-center bg-fulvous py-20 px-4">
+      <div className="xl:hidden flex flex-col justify-center items-center text-center bg-fulvous py-20 px-4 h-landing-mobile">
         <h2 className="text-4xl font-extrabold">Ready to Deploy</h2>
         <p className="text-3xl my-10 px-6 max-w-5xl">
           A convenient command line interface for developers to deploy and update their applications with canary deployments
         </p>
-        <img src={cli} alt="Sentinel initialization gif" className="rounded-lg" />
+        <img src={cli} alt="Sentinel cli" className="rounded-lg" />
       </div>
 
       {/* Start third block */}
